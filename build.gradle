@@ -272,10 +272,9 @@ configure(subprojects.findAll {!it.childProjects}) {
 
 	if (project.hasProperty('docker')) {
 		setUpTestableTomcat.enabled = false
+		startTestableTomcat.enabled = false
+		stopTestableTomcat.enabled = false
 	}
-
-	startTestableTomcat.enabled = false
-	stopTestableTomcat.enabled = false
 }
 
 repositories {
